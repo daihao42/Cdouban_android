@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dip">
+
+    <ImageView
+        android:id="@+id/ItemIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/ItemTvTitle"
+        android:text="title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@+id/ItemIv"
+        />
+
+    <TextView
+        android:id="@+id/ItemTvDirector"
+        android:text="director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@+id/ItemIv"
+        android:layout_below="@+id/ItemTvTitle"
+        />
+
+    <TextView
+        android:id="@+id/ItemTvActor"
+        android:text="actor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@+id/ItemIv"
+        android:layout_below="@+id/ItemTvDirector"
+        />
+
+    <TextView
+        android:id="@+id/ItemTvTypes"
+        android:text="types"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@+id/ItemIv"
+        android:layout_below="@+id/ItemTvActor"
+        />
+
+    <TextView
+        android:id="@+id/ItemTvOntime"
+        android:text="ontime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@+id/ItemIv"
+        android:layout_below="@+id/ItemTvTypes"
+        />
+
+    <!-- ID仅仅是为了传参进入onitemclicklistener -->
+    <TextView
+        android:id="@+id/movie_id"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:visibility="gone"/>
+
+</RelativeLayout>

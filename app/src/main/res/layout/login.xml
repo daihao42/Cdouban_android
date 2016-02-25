@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_main"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:id="@+id/login_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/login_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="登录"
+                    android:textColor="#82858b" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/register_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/register_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="注册"
+                    android:textColor="#82858b" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <LinearLayout  
+        android:layout_width="fill_parent"  
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >  
+  
+        <Button  
+            android:id="@+id/cancel"
+            android:layout_width="65.83dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"  
+            android:text="@string/cancel"
+            android:textColor="@color/colorSkyblue" />
+  
+        <TextView  
+            android:id="@+id/tv_friend_title"  
+            android:layout_width="wrap_content"  
+            android:layout_height="50dip"  
+            android:layout_weight="1"  
+            android:gravity="center"  
+            android:text="Dai"
+            android:textColor="#000000"
+            android:textSize="20dip" />  
+  
+        <Button  
+            android:id="@+id/confirm"
+            android:layout_width="65.83dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/confirm"
+            android:textColor="@color/colorSkyblue" />
+    </LinearLayout>  
+
+</LinearLayout>

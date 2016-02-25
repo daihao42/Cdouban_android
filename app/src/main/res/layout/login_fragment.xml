@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  
+    <RelativeLayout  
+        android:id="@+id/editRel"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content" >  
+  
+        <RelativeLayout  
+            android:id="@+id/accountRel"  
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:layout_marginTop="14dp"
+            android:background="@color/colorGray"
+            android:clickable="true"
+            android:gravity="center_vertical" >  
+  
+            <TextView  
+                android:id="@+id/account"  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:padding="8dp"  
+                android:text="@string/account"  
+                android:textColor="#000"  
+                android:textSize="17sp" />  
+  
+            <EditText  
+                android:id="@+id/accountEdittext"
+                android:inputType="textEmailAddress"  
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_centerVertical="true"  
+                android:layout_marginLeft="20dip"  
+                android:layout_toRightOf="@id/account"  
+                android:background="@null"
+                android:singleLine="true"
+                android:hint="@string/account"  
+                android:textSize="15sp" />  
+        </RelativeLayout>  
+  
+        <RelativeLayout  
+            android:id="@+id/pwdRel"  
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:layout_below="@id/accountRel"
+            android:background="@color/colorGray"
+            android:clickable="true"
+            android:gravity="center_vertical" >  
+  
+            <TextView  
+                android:id="@+id/pwd"  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:padding="8dp"  
+                android:text="@string/pwd"  
+                android:textColor="#000"  
+                android:textSize="17sp" />  
+  
+            <EditText  
+                android:id="@+id/pwdEdittext"  
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_centerVertical="true"  
+                android:layout_marginLeft="20dip"  
+                android:layout_toRightOf="@id/pwd"  
+                android:background="@null"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:hint="@string/pwd"  
+                android:textSize="15sp" />  
+        </RelativeLayout>  
+    </RelativeLayout>  
+  
+    <TextView  
+        android:id="@+id/sound_help"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_marginTop="15dip"  
+        android:layout_marginLeft="15dip"  
+        android:text="@string/forget_pwd"  
+        android:textColor="#29981A" />
+
+</LinearLayout>
